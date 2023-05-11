@@ -134,7 +134,11 @@ img {
 }
 
 .pm {
-	margin: 12em 12em 3em 12em;
+	margin: 12em 12em 3em 0em;
+}
+
+.pm2 {
+	margin: 190px 0px 0px 380px;
 }
 
 
