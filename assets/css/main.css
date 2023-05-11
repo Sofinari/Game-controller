@@ -8,7 +8,9 @@ body {
 	color: white;
 	/* white, #FFFFFF */
 	margin: 0;
-	font-family: 'Input Mono Narrow';
+	/*font-family: 'Input Mono Narrow';*/
+
+	font-family: 'Space Mono', monospace;
 	background: url(../../IMG/sfondo.png) round;
 }
 
@@ -58,19 +60,21 @@ a {
 
 p {
 	margin: 3em 0 3em 0;
-	max-width: 70em;
+	max-width: 24em;
 	font-size: 12pt;
 }
 
 h1 {
 	margin: 0;
-	font-size: 295px;
-	font-family: 'Hoverunit';
+	font-size: 270px;
+	font-family: 'Chakra Petch', sans-serif;
+	/*font-family: ''Hoverunit'';*/
+
 
 }
 
 h2 {
-	font-family: 'Hoverunit';
+	font-family: 'Chakra Petch', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 78px;
@@ -137,7 +141,7 @@ footer {
 	border: 1px rgba(253, 250, 250, 0.25) solid;
 	width: 100%;
 	height: 300px;
-	
+
 
 	background: linear-gradient(253.09deg, rgba(0, 122, 255, 0.25) -7.53%, rgba(88, 86, 214, 0.1875) 97.04%);
 	backdrop-filter: blur(25px);
