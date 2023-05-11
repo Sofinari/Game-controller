@@ -34,9 +34,9 @@
 			<div id="logo" style="float: left; margin: 0% 65% 0% -100%;"><img src="IMG/Logo.png"></div>
 			<div id="link">
 				<ul>
-					<li><a href="#"><b>Cos'è</b></li>
-					<li><a href="#"><b>Storia</b></li>
-					<li><a href="#"><b>Tipologie</b></li>
+					<li><a href="#che-cose"><b>Cos'è</b></li>
+					<li><a href="#storia"><b>Storia</b></li>
+					<li><a href="#tipologie"><b>Tipologie</b></li>
 				</ul>
 			</div>
 		</div>
@@ -53,7 +53,7 @@
 
 
 		<!-- --------------------------------------------------------------------- -->
-		<h2>Che cos’è?</h2>
+		<h2 id="che-cose">Che cos’è?</h2>
 		<section class="filetto">
 			<div class="contenuto-sezione">
 				<p style="max-width: 44em;">
@@ -80,10 +80,11 @@
 
 
 		<!-- --------------------------------------------------------------------- -->
-		<h2>Storia</h2>
+		<h2 id="storia">Storia</h2>
 		<section class="filetto" style="grid-template-columns: 2fr 2fr 2fr;">
 			<div class="contenuto-sezione">
-				<p style="margin: 3em 0 10em 0; max-width: 90em;">La storia dei controller dei videogiochi è caratterizzata da
+				<p style="margin: 3em 0 10em 0; max-width: 90em;">La storia dei controller dei videogiochi è
+					caratterizzata da
 					un'evoluzione tecnologica costante alla
 					ricerca di un'esperienza di gioco sempre migliore. Dagli inizi modesti fino ai dispositivi moderni,
 					i controller hanno giocato un ruolo fondamentale nell'interazione tra i giocatori e il mondo
@@ -166,7 +167,7 @@
 
 
 		<!-- --------------------------------------------------------------------- -->
-		<h2>Tipologia</h2>
+		<h2 id="tipologie">Tipologia</h2>
 		<section class="filetto">
 
 			<div style="margin: 4% 0% 0% 0%;"><img src="IMG/Guanto.jpg" alt="Immagine grigia"></div>
@@ -257,6 +258,30 @@
 			<a href="https://en.wikipedia.org/wiki/List_of_game_controllers">wikipedia controller</a>
 		</p>
 	</footer>
+
+
+
+
+
+	<script>
+		window.addEventListener('DOMContentLoaded', (event) => {
+			// Aggiungi un gestore di eventi a tutti i link nel menu di navigazione
+			const links = document.querySelectorAll('nav a');
+			links.forEach((link) => {
+				link.addEventListener('click', (event) => {
+					event.preventDefault(); // Impedisce l'azione predefinita del link
+					const targetId = link.getAttribute('href'); // Ottieni l'attributo href del link
+					const targetElement = document.querySelector(targetId); // Seleziona l'elemento di destinazione
+					const targetOffset = targetElement.offsetTop; // Calcola l'offset dell'elemento di destinazione dalla parte superiore della pagina
+					window.scrollTo({
+						top: targetOffset -100,
+						behavior: 'smooth' // Animazione dello scroll
+					});
+				});
+			});
+		});
+	</script>
+
 </body>
 
 </html>
