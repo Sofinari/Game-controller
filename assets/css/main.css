@@ -136,6 +136,22 @@ img {
 	margin: 12em 12em 3em 12em;
 }
 
+
+
+
+.immagine-scroll {
+	opacity: 0;
+	transition: opacity 1s ease;
+  }
+  
+  .immagine-scroll.show {
+	opacity: 1;
+  }
+  
+
+
+
+
 footer {
 	box-sizing: border-box;
 	border: 1px rgba(253, 250, 250, 0.25) solid;
