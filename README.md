@@ -1,2 +1,2 @@
 # game-control-hub
-https://
+ https://sofinari.github.io/game-control-hub/
