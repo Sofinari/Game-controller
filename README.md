@@ -23,7 +23,12 @@ Per la progettazione del sito, ho deciso di utilizzare ...
 ## Design dell’interfraccia e modalià di interazione
 Ho progettato l’interfaccia e la modalità di interazione per il sito, il codice ....
 
-[<img src="doc/Interazione.gif" width="700" alt="immagine del pacman">]()
+
+
+
+https://github.com/Sofinari/game-control-hub/assets/126773941/4733f2e6-d119-4863-b0c1-aec40e6b806e
+
+
 
 
 ## Tecnologia usata
@@ -114,7 +119,6 @@ Funzione per disegnare il canvas più tutte le altre sottostrutture
 ## Target e contesto d’uso
 Il target principale è costituito per gli amanti dei videogiochi, indipendentemente dall’età. Il contesto d’uso ideale per la marionetta potrebbe essere per essere utilizzata in contesti di intrattenimento interattivo, come ad esempio fiere del gioco o eventi simili. Grazie alla sua interfaccia intuitiva e alla modalità di interazione semplice ma coinvolgente, la marionetta può catturare l’attenzione del pubblico e intrattenerlo.
 
-https://user-images.githubusercontent.com/6561331/236182302-68a6bd12-7b83-4d19-b83e-c9b7db795881.mp4
 
 ## Link al progetto su GitHub
 <a href ="https://sofinari.github.io/fake_pacman/">https://sofinari.github.io/fake_pacman/</a>
