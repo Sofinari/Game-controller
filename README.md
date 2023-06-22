@@ -79,4 +79,4 @@ Il mio progetto si rivolge a un pubblico di appassionati di videogiochi e a colo
 
 
 ## Link al progetto su GitHub
-<a href ="https://sofinari.github.io/fake_pacman/">https://sofinari.github.io/fake_pacman/</a>
+<a href ="https://sofinari.github.io/game-control-hub/">https://sofinari.github.io/game-control-hub/</a>
