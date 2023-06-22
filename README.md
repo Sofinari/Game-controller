@@ -15,7 +15,7 @@ Il progetto affronta il tema dei controller...
 ## Riferimenti progettuali
 Per la progettazione del sito, ho deciso di utilizzare ...
 
-[<img src="doc/Blue.gif" width="400" alt="immagine del pacman">]()
+[<img src="doc/Blue.gif" width="200" alt="immagine del pacman">]()
 [<img src="doc/1980.jpg" width="700" alt="immagine del pacman">]()
 
 
