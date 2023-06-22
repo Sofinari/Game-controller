@@ -35,6 +35,7 @@ https://github.com/Sofinari/game-control-hub/assets/126773941/4733f2e6-d119-4863
 La tecnologia utilizzata per la realizzazione del sito si basa su HTML, CSS, JS.
 
 
+
 ```JavaScript
 
 window.addEventListener('DOMContentLoaded', (event) => {
@@ -73,6 +74,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 ```
 Funzione per lo scroll automatico quando viene cliccato il link del nav
 (aggiunta “smooth”, ecc...)
+
 
 
 ## Target e contesto d’uso
