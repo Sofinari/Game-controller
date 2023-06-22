@@ -9,11 +9,11 @@ Autore: Sofia Nunnari
 
 
 ## Tema affrontato
-Il progetto affronta il tema dei controller...
+Il tema affrontato nel mio progetto è quello dei controller dei videogiochi, includendo l'aspetto, il funzionamento, l'evoluzione e la storia di questi dispositivi.
 
 
 ## Riferimenti progettuali
-Per la progettazione del sito, ho deciso di utilizzare ...
+Il mio progetto si basa su un design che utilizza sfumature di rosa/viola, creando un'atmosfera giocosa e accattivante. All'interno della pagina, sono presenti anche gif di personaggi in pixel art, che contribuiscono a rendere il sito più vivace e divertente.
 
 [<img src="doc/Blue.gif" width="200" alt="immagine del pacman">]()
 [<img src="doc/1980.jpg" width="700" alt="immagine del pacman">]()
@@ -21,8 +21,7 @@ Per la progettazione del sito, ho deciso di utilizzare ...
 
 
 ## Design dell’interfraccia e modalià di interazione
-Ho progettato l’interfaccia e la modalità di interazione per il sito, il codice ....
-
+L'interfaccia del sito è progettata in modo intuitivo e user-friendly. La pagina è organizzata in sezioni chiare e ben strutturate, che includono titoli e sottotitoli per facilitare la navigazione e la comprensione dei contenuti. Le immagini dei controller e le gif dei personaggi in pixel art sono posizionate in modo accattivante lungo la pagina, contribuendo a rendere l'esperienza visiva più coinvolgente. L'interazione con il sito avviene attraverso lo scrolling e il clic sui link per accedere alle diverse sezioni e informazioni.
 
 
 
@@ -32,92 +31,51 @@ https://github.com/Sofinari/game-control-hub/assets/126773941/4733f2e6-d119-4863
 
 
 ## Tecnologia usata
-La tecnologia utilizzata per la realizzazione del sito si basa su HTML, CSS, JS...
+La tecnologia utilizzata per la realizzazione del sito si basa su HTML, CSS, JS.
 
 
 ```JavaScript
-function drawPacman(x, y, size, angle, flip) {
-	const mouthSize = size * 0.5;
 
-	noStroke();
-	fill(255, 255, 0); // colore giallo per il corpo di Pacman
-
-	angle = min(angle, 90);
-
-	const a2 = radians(angle / 2)
-
-	if (flip) {
-		arc(x, y, size, size, a2, TAU - a2, PIE);
-	} else {
-		arc(x, y, size, size, PI + a2, PI - a2, PIE);
-	}
-}
-```
-Funzione per disegnare il pacman
-
+window.addEventListener('DOMContentLoaded', (event) => {
+			// Aggiungi un gestore di eventi a tutti i link nel menu di navigazione
+			const links = document.querySelectorAll('nav a');
+			links.forEach((link) => {
+				link.addEventListener('click', (event) => {
+					event.preventDefault(); // Impedisce l'azione predefinita del link
+					const targetId = link.getAttribute('href'); // Ottieni l'attributo href del link
+					const targetElement = document.querySelector(targetId); // Seleziona l'elemento di destinazione
+					const targetOffset = targetElement.offsetTop; // Calcola l'offset dell'elemento di destinazione dalla parte superiore della pagina
+					window.scrollTo({
+						top: targetOffset - 100,
+						behavior: 'smooth' // Animazione dello scroll
+					});
+				});
+			});
+		});
 
 
-```JavaScript
-function keyPressed() {
-	if (keyCode === 32) {
-		let newPallino = new Pallino();
-		pallini.push(newPallino);
-	}
-}
-class Pallino {
-	constructor() {
-		this.x = random(width);
-		this.y = random(height);
-		this.r = 10
-	}
+		window.addEventListener('scroll', function () {
+			var immagini = document.querySelectorAll('.immagine-scroll');
 
-	display() {
-		fill(255);
-		ellipse(this.x, this.y, this.r * 2, this.r * 2)
-	}
+			for (var i = 0; i < immagini.length; i++) {
+				var posizione = immagini[i].getBoundingClientRect().top;
+				var finestraAltezza = window.innerHeight;
 
-	collide(x, y, r) {
-		const distCentri = dist(x, y, this.x, this.y);
-		const sommaRaggi = this.r + r; // raggio della bocca
-		if (distCentri < sommaRaggi) {
-			// Incrementa il punteggio e rimuovi il pallino
-			punteggio++;
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-}
+				if (posizione < finestraAltezza) {
+					immagini[i].classList.add('show');
+				} else {
+					immagini[i].classList.remove('show');
+				}
+			}
+		});
 
 ```
-Funzioni per generare i pallini + la sparizione del pallino una
-volta mangiato (con l’incrementazione di un punto)
-
-
-```JavaScript
-async function draw() {
-	background('#00095B');
-
-	for (let i = 0; i < pallini.length; i++) {
-		pallini[i].display();
-	}
-
-	// Visualizza il punteggio
-	textSize(32);
-	fill(255);
-	text("Punteggio: " + punteggio, 10, 30);
-
-
-```
-Funzione per disegnare il canvas più tutte le altre sottostrutture
-(conteggio dei punti, interpolazione “smooth”, ecc...)
-
-
+Funzione per lo scroll automatico quando viene cliccato il link del nav
+(aggiunta “smooth”, ecc...)
 
 
 ## Target e contesto d’uso
-Il target principale è costituito per gli amanti dei videogiochi, indipendentemente dall’età. Il contesto d’uso ideale per la marionetta potrebbe essere per essere utilizzata in contesti di intrattenimento interattivo, come ad esempio fiere del gioco o eventi simili. Grazie alla sua interfaccia intuitiva e alla modalità di interazione semplice ma coinvolgente, la marionetta può catturare l’attenzione del pubblico e intrattenerlo.
+Il mio progetto si rivolge a un pubblico di appassionati di videogiochi e a coloro che sono interessati a conoscere la storia e l'evoluzione dei controller. Il contesto d'uso è un sito web informativo e divulgativo, che offre informazioni dettagliate sui controller dei videogiochi. Gli utenti possono navigare nel sito per apprendere nuove informazioni, esplorare le diverse tipologie di controller e approfondire la storia di questi dispositivi.
 
 
 ## Link al progetto su GitHub
