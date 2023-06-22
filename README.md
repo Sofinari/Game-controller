@@ -17,7 +17,7 @@ Il mio progetto si ispira a <a href="https://vr.space/the-ultimate-timeline-of-1
 
 
 [<img src="doc/Blue.gif" width="200" alt="immagine del pacman">]()
-[<img src="doc/1980.jpg" width="700" alt="immagine del pacman">]()
+[<img src="doc/1980.jpg" width="400" alt="immagine del pacman">]()
 
 
 
