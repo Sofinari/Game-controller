@@ -13,7 +13,8 @@ Il tema affrontato nel mio progetto è quello dei controller dei videogiochi, in
 
 
 ## Riferimenti progettuali
-Il mio progetto si basa su un design che utilizza sfumature di rosa/viola, creando un'atmosfera giocosa e accattivante. All'interno della pagina, sono presenti anche gif di personaggi in pixel art, che contribuiscono a rendere il sito più vivace e divertente.
+Il mio progetto si ispira a <a href="https://vr.space/the-ultimate-timeline-of-130-video-game-controllers/">"The Ultimate Timeline of 130 Video Game Controllers"</a> di VR Space, che presenta una linea temporale interattiva che illustra l'evoluzione dei controller dei videogiochi nel corso degli anni. Prendendo spunto da questo progetto,il mio si basa su un design che utilizza sfumature di rosa/viola, creando un'atmosfera giocosa e accattivante. All'interno della pagina, sono presenti anche gif di personaggi in pixel art, che contribuiscono a rendere il sito più vivace e divertente.
+
 
 [<img src="doc/Blue.gif" width="200" alt="immagine del pacman">]()
 [<img src="doc/1980.jpg" width="700" alt="immagine del pacman">]()
